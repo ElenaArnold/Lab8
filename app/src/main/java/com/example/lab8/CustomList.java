@@ -67,6 +67,16 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city
      */
     public boolean hasCity(City city) {
+        // Compare new city name and province name to existing cities so that we are not checking for
+        // an exact instance of an object
+        for(int i = 0; i < cities.size(); i++) {
+            City cityX = cities.get(i);
+            if (cityX.getCityName().compareTo(city.getCityName()) == 0 &&
+                    cityX.getProvinceName().compareTo(city.getProvinceName()) == 0) {
+                return true;
+            }
+        }
+
         return false;
     }
 
