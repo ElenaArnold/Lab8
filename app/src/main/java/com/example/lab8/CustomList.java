@@ -80,4 +80,17 @@ public class CustomList extends ArrayAdapter<City> {
         return false;
     }
 
+    /**
+     * this deletes a city from the list
+     * for the first phase it will be empty
+     * @param city
+     *      This is a city to delete from the list which is of type {@link City}.
+     *@throws IllegalArgumentException if city is not in the list.
+     */
+    public void deleteCity(City city) {
+
+    }
+
+
+
 }
