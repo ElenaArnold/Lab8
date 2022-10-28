@@ -57,8 +57,9 @@ public class CustomListTest {
 
     @Test
     void testDelete() {
+        list = MockCityList();
         City city = new City("Estevan", "SK");
-        list.add(city);
+        list.addCity(city);
         assertTrue(list.hasCity(city));
         list.deleteCity(city);
         assertAll( "Testing deletion of city",
