@@ -95,6 +95,15 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
+    /**
+     * This function returns the number of cities that are in the list.
+     * @return
+     *      The number of cities in the list.
+     */
+    public int countCities() {
+        return -1;
+    }
+
 
 
 }
